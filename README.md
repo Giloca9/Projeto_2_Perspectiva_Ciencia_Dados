@@ -1,6 +1,6 @@
 # Projeto 2 – Perspectiva em Ciência de Dados
 
-![Imagens/palmeiras.jpg]
+![Foto Palmeiras](Imagens/palmeiras.jpg)
 
 Este repositório contém o **Projeto 2** desenvolvido para a disciplina de **Perspectiva em Ciência de Dados**.
 
