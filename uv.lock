@@ -2810,6 +2810,7 @@ dependencies = [
     { name = "shap", version = "0.52.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "tabicl" },
     { name = "tensorflow" },
+    { name = "torch" },
     { name = "xgboost", version = "3.2.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
     { name = "xgboost", version = "3.3.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
 ]
@@ -2826,6 +2827,7 @@ requires-dist = [
     { name = "shap", specifier = ">=0.49.1" },
     { name = "tabicl", specifier = ">=2.1.1" },
     { name = "tensorflow", specifier = ">=2.21.0" },
+    { name = "torch", specifier = ">=2.10.0" },
     { name = "xgboost", specifier = ">=3.2.0" },
 ]
 
