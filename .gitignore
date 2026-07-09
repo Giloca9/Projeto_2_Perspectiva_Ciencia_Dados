@@ -1,3 +1,4 @@
 .Rhistory
 .ipynb_checkpoints/
 .python-version
+.venv/
