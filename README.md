@@ -1,6 +1,6 @@
 # Projeto 2 – Perspectiva em Ciência de Dados
 
-![Foto Palmeiras](Imagens/palmeiras.jpg)
+![Foto Palmeiras](4.Imagens/palmeiras.jpg)
 
 Este repositório contém o **Projeto 2** desenvolvido para a disciplina de **Perspectiva em Ciência de Dados**.
 
@@ -63,7 +63,7 @@ A comparação entre os modelos permitirá selecionar aquele com melhor capacida
 
 # Conformal Prediction
 
-Após a seleção do modelo final, será aplicada a metodologia de **Conformal Prediction**, permitindo gerar **intervalos de previsão**, em vez de apenas previsões pontuais.
+Será aplicada a metodologia de **Conformal Prediction** para o TabICL, permitindo gerar **intervalos de previsão**, em vez de apenas previsões pontuais.
 
 Essa abordagem fornece estimativas mais robustas e informativas, possibilitando:
 
@@ -75,15 +75,36 @@ Essa abordagem fornece estimativas mais robustas e informativas, possibilitando:
 
 # Interpretabilidade
 
-Para compreender os fatores que mais influenciam as previsões, serão aplicadas técnicas de interpretabilidade de modelos, com destaque para:
+Para compreender os fatores que mais influenciam as previsões realizadas pelos modelos, serão aplicadas técnicas de interpretabilidade, permitindo analisar como cada variável contribui para os resultados obtidos.
 
-* **SHAP (SHapley Additive exPlanations)**
+Para os modelos tradicionais, serão avaliadas técnicas de interpretação adequadas às suas características, enquanto para modelos mais complexos será utilizada uma abordagem baseada em explicações locais.
 
-Essas técnicas permitirão:
+Em especial, será utilizado o método:
 
-* Identificar as variáveis mais importantes;
-* Compreender a contribuição individual de cada característica;
-* Extrair insights relevantes sobre os fatores que impactam a audiência das notícias relacionadas ao Palmeiras.
+* **LIME (Local Interpretable Model-Agnostic Explanations)**
+
+O LIME será aplicado ao modelo **TabICL**, após a etapa de redução de dimensionalidade utilizando **SVD (Singular Value Decomposition)**. Essa etapa é necessária devido à alta dimensionalidade dos dados textuais, permitindo transformar as representações TF-IDF em um conjunto reduzido de componentes mais informativos antes da aplicação do modelo.
+
+A utilização do LIME permitirá:
+
+* Identificar quais características possuem maior influência nas previsões individuais;
+* Compreender o comportamento do modelo em diferentes exemplos de notícias;
+* Gerar interpretações mais transparentes para modelos complexos de Machine Learning.
 
 ---
 
+# Objetivo Geral do Trabalho
+
+O objetivo deste projeto não se limita apenas à identificação do modelo com maior desempenho preditivo.
+
+A proposta principal é realizar uma análise comparativa entre diferentes técnicas de modelagem, explorando desde métodos tradicionais até abordagens mais recentes de Machine Learning.
+
+Dessa forma, busca-se compreender:
+
+* Como diferentes algoritmos se comportam diante do problema de previsão de audiência de notícias;
+* As vantagens e limitações de cada abordagem;
+* O impacto das diferentes técnicas de representação e processamento dos dados;
+* A relação entre desempenho preditivo, interpretabilidade e confiabilidade das previsões.
+
+Além da comparação entre modelos, a aplicação de **Conformal Prediction** e de técnicas de **interpretabilidade** permite uma análise mais completa, considerando não apenas a capacidade preditiva dos modelos, mas também a incerteza associada aos resultados e a compreensão dos fatores que influenciam as decisões realizadas.
+```
